@@ -14,7 +14,15 @@
     ]
   },
   "ato": {
-    "dataSource": null,
+    "dataSource": "mysql",
+    "public": true
+  },
+  "temperature": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "ph": {
+    "dataSource": "mysql",
     "public": true
   }
 }

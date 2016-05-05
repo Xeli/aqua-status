@@ -1,0 +1,26 @@
+{
+  "name": "temperature",
+  "plural": "temperatures",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "value": {
+      "type": "number",
+      "dataType": "decimal",
+      "precision": 4,
+      "scale": 2,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
