@@ -13,7 +13,10 @@
     },
     "value": {
       "type": "number",
-      "required": true
+      "required": true,
+      "dataType": "decimal",
+      "precision": 4,
+      "scale": 2
     }
   },
   "validations": [],
