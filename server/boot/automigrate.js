@@ -29,7 +29,7 @@ module.exports = function(app) {
             }
         });
     }
-    autoMigrateAll();
-    //autoUpdateAll();
+    //autoMigrateAll();
+    autoUpdateAll();
 
 };
