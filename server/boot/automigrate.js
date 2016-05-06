@@ -1,4 +1,4 @@
-# /server/boot/autoupdate.js
+///server/boot/autoupdate.js
 module.exports = function(app) {
     var path = require('path');
     var models = require(path.resolve(__dirname, '../model-config.json'));
