@@ -9,6 +9,7 @@
   "properties": {
     "date": {
       "type": "date",
+      "index": true,
       "required": true
     },
     "switchOn": {
