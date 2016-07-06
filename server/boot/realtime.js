@@ -4,4 +4,9 @@ module.exports = function(app) {
     Temperature.createChangeStream(function(err, changes) {
         changes.pipe(eventStream.stringify()).pipe(process.stdout);
     });
+
+    var Light = app.models.Light;
+    Light.createChangeStream(function(err, changes) {
+        changes.pipe(eventStream.stringify()).pipe(process.stdout);
+    });
 }

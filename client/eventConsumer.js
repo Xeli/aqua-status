@@ -11,3 +11,12 @@ function setTemperature(data) {
 function updateTemperature(data) {
     updateNumericValue($('.temperature'), data.value);
 }
+
+function setLight(data) {
+    setValue($('.light.blue'), data.valueBlue);
+    setValue($('.light.white'), data.valueWhite);
+}
+function updateLights(data) {
+    updateNumericValue($('.light.blue'), data.valueBlue);
+    updateNumericValue($('.light.white'), data.valueWhite);
+}
