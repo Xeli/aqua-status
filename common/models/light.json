@@ -1,0 +1,34 @@
+{
+  "name": "light",
+  "plural": "lights",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "index": true,
+      "required": true
+    },
+    "valueBlue": {
+      "type": "number",
+      "required": true,
+      "dataType": "decimal",
+      "precision": 4,
+      "scale": 2
+    },
+    "valueWhite": {
+      "type": "number",
+      "required": true,
+      "dataType": "decimal",
+      "precision": 4,
+      "scale": 2
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
