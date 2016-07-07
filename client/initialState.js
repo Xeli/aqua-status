@@ -2,7 +2,9 @@ function getInitialStatus(modelNamePlural, callback) {
     jQuery.ajax({
         method: 'GET',
         data: {
-            'order': 'date DESC'
+            'filter': {
+                'order': 'date DESC'
+            }
         },
         url: '/api/' + modelNamePlural + '/findOne',
         dataType: 'json',
