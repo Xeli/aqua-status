@@ -21,3 +21,6 @@ lazy val root = (project in file(".")).
     )
   )
 mainClass in assembly := Some("eu.xeli.aquastatus.Main")
+
+pillarConfigFile in ThisBuild := file("src/main/resources/application.conf")
+pillarMigrationsDir in ThisBuild := file("src/main/resources/migrations")
