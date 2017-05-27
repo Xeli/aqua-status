@@ -40,10 +40,10 @@ object MetricsUnmarshaller {
 
   private def convertMetrics(avro: AvroMetrics): Metrics = {
     val lights = avro.light.map(avro => LightChannel(avro.name, avro.value))
-    Metrics(UUID.randomUUID, avro.time,
-                             avro.waterLevel,
-                             avro.temperature,
-                             avro.pH
+    Metrics(null, avro.time,
+                  avro.waterLevel,
+                  avro.temperature,
+                  avro.pH
     )
   }
 }

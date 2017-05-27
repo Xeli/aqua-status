@@ -5,7 +5,6 @@ import io.getquill._
 object Helpers {
 
   def createSessionAndInitKeyspace(): CassandraAsyncContext[Literal] = {
-
-    new CassandraAsyncContext[Literal]("ctx")
+    new CassandraAsyncContext[Literal]("development.quill")
   }
 }
